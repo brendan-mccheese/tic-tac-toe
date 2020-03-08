@@ -3,6 +3,14 @@ import styles from "./Cell.module.css";
 import { GameContext } from "../Game";
 import { CHOOSE_POSITION } from "../state/actions";
 
+/**
+ * A cell to be used on the game board.
+ * @param rowId
+ * @param cellId
+ * @param border
+ * @returns {*}
+ * @constructor
+ */
 export const Cell = ({
     rowId,
     cellId,

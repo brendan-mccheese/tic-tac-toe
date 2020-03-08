@@ -2,6 +2,11 @@ import React from "react";
 import style from "./Board.module.css";
 import { Cell } from "./Cell";
 
+/**
+ * The game board component.
+ * @returns {*}
+ * @constructor
+ */
 export const Board = () => (
     <div className={style.board}>
         <div className={`${style.row} ${style.borderBottom}`}>

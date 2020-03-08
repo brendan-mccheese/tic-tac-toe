@@ -7,6 +7,11 @@ import { RESET_GAME } from "./state/actions";
 
 export const GameContext = React.createContext(null);
 
+/**
+ * Main game entrypoint component.
+ * @returns {*}
+ * @constructor
+ */
 export const Game = () => {
     const [state, dispatch] = React.useReducer(rootReducer, cleanState);
     return (

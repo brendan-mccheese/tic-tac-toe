@@ -2,6 +2,7 @@ import { calculateWinner } from "./calculate-winner";
 import { CHOOSE_POSITION, RESET_GAME } from "./actions";
 import { areAllPositionsFilled } from "./are-all-positions-filled";
 
+// Clean state
 export const cleanState = {
     positions: [
         [null, null, null],
@@ -13,6 +14,12 @@ export const cleanState = {
     isADraw: false,
 };
 
+/**
+ * The root reducer used for managing game state.
+ * @param state
+ * @param action
+ * @returns state
+ */
 export function rootReducer(state, action) {
     switch (action.type) {
         case CHOOSE_POSITION: {
