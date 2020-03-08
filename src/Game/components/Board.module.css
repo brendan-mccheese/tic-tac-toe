@@ -1,0 +1,17 @@
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.borderBottom {
+    border-bottom: solid 6px #cdcdcd;
+}
